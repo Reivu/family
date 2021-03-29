@@ -30,12 +30,11 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Selamat datang ${_user.name}'),
+        title: Text('Hallo ${_user.name}'),
       ),
       body: Container(
         padding: EdgeInsets.all(20),
-        child: Center(
-            child: Column(
+        child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             PrimaryButton(
@@ -54,9 +53,9 @@ class _HomeViewState extends State<HomeView> {
                   return BaganView();
                 }));
               },
-            )
+            ),
           ],
-        )),
+        ),
       ),
     );
   }
