@@ -175,7 +175,7 @@ class DatabaseHelper {
     return List<UserModel>.from(results.map((e) => UserModel.fromMap(e)));
   }
 
-  // 6. data sepupu laki - laki dari hanni
+  // 7. data sepupu laki - laki dari hani
   Future<List<UserModel>> getSepupu(int id, int iGender) async {
     final db = await _db;
 
